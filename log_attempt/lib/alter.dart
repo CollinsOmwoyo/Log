@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'membertransactions.dart';
 import 'homepage.dart';
-import 'alter.dart';
 
-class MemberPage extends StatelessWidget {
-  const MemberPage({Key? key}) : super(key: key);
+class AlterPage extends StatelessWidget {
+  const AlterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class MemberPage extends StatelessWidget {
                       context,
                       Colors.blueGrey,
                       MdiIcons.account,
-                      'MyAccount',
+                      'Balances',
                       () {
                         Navigator.push(
                           context,
@@ -45,7 +44,7 @@ class MemberPage extends StatelessWidget {
                       context,
                       Colors.green,
                       MdiIcons.cashSync,
-                      'Loanss',
+                      'Loans',
                       () {
                         Navigator.push(
                           context,
@@ -99,15 +98,15 @@ class MemberPage extends StatelessWidget {
                     _buildCard(
                       context,
                       Colors.orange,
-                      MdiIcons.calculatorVariant,
-                      'Calculator',
+                      MdiIcons.cashClock,
+                      'Payments',
                       () {},
                     ),
                     _buildCard(
                       context,
                       Colors.deepPurple,
-                      MdiIcons.notificationClearAll,
-                      'Notifications',
+                      MdiIcons.bankOutline,
+                      'Shares',
                       () {},
                     ),
                   ],
@@ -141,7 +140,7 @@ class MemberPage extends StatelessWidget {
                 ),
                 Text(
                   text,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

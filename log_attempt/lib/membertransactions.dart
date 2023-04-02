@@ -116,7 +116,7 @@ class _TransactionPageState extends State<TransactionPage> {
                           ]),
                       child: Center(
                         child: Text(
-                          "Income",
+                          "Contributions",
                           style: TextStyle(
                               color: Colors.black.withOpacity(0.5),
                               fontSize: 13,
@@ -141,7 +141,7 @@ class _TransactionPageState extends State<TransactionPage> {
                           ]),
                       child: Center(
                         child: Text(
-                          "Expense",
+                          "Penalties",
                           style: TextStyle(
                               color: Colors.black.withOpacity(0.5),
                               fontSize: 13,
@@ -159,7 +159,7 @@ class _TransactionPageState extends State<TransactionPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text("Today",
+                Text("Recent",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
@@ -228,7 +228,7 @@ class _TransactionPageState extends State<TransactionPage> {
                                     height: 5,
                                   ),
                                   Text(
-                                    "Payment from Andrea",
+                                    "Monthly Contribution",
                                     style: TextStyle(
                                         fontSize: 12,
                                         color: Colors.black.withOpacity(0.5),
@@ -243,7 +243,7 @@ class _TransactionPageState extends State<TransactionPage> {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: const [
                                 Text(
-                                  "\$30.00",
+                                  "1500.00",
                                   style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
