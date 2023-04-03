@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:log_attempt/arithmetic.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'membertransactions.dart';
 import 'homepage.dart';
@@ -32,12 +33,12 @@ class MemberPage extends StatelessWidget {
                       context,
                       Colors.blueGrey,
                       MdiIcons.account,
-                      'MyAccount',
+                      'My Account',
                       () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const AlterPage()),
+                              builder: (context) => const DailyPage()),
                         );
                       },
                     ),
@@ -45,12 +46,12 @@ class MemberPage extends StatelessWidget {
                       context,
                       Colors.green,
                       MdiIcons.cashSync,
-                      'Loanss',
+                      'Loans',
                       () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TransactionPage()),
+                              builder: (context) => const LoansActivity()),
                         );
                       },
                     ),
@@ -74,7 +75,7 @@ class MemberPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const DailyPage()),
+                              builder: (context) => TransactionPage()),
                         );
                       },
                     ),
@@ -101,7 +102,13 @@ class MemberPage extends StatelessWidget {
                       Colors.orange,
                       MdiIcons.calculatorVariant,
                       'Calculator',
-                      () {},
+                      () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CalculatorApp()),
+                        );
+                      },
                     ),
                     _buildCard(
                       context,
