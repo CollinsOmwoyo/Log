@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:log_attempt/tranactions.dart';
+import 'tranactions.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'membertransactions.dart';
 import 'alter.dart';
+import 'shares.dart';
 import 'adminmembers.dart';
 import 'members.dart';
 import 'chamacalculations.dart';
@@ -86,7 +87,13 @@ class AdminPage extends StatelessWidget {
                       Colors.deepOrange,
                       MdiIcons.accountDetailsOutline,
                       'Member Shares',
-                      () {},
+                      () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MemberSharesScreen()),
+                        );
+                      },
                     ),
                   ],
                 ),

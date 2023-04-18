@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:log_attempt/arithmetic.dart';
+import 'arithmetic.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'membertransactions.dart';
 import 'homepage.dart';
