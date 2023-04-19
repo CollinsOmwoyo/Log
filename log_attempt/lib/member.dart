@@ -1,9 +1,11 @@
+import 'package:eChama/share.dart';
 import 'package:flutter/material.dart';
 import 'arithmetic.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'membertransactions.dart';
 import 'homepage.dart';
 import 'alter.dart';
+import 'share.dart';
 
 class MemberPage extends StatelessWidget {
   const MemberPage({Key? key}) : super(key: key);
@@ -68,7 +70,7 @@ class MemberPage extends StatelessWidget {
                   children: <Widget>[
                     _buildCard(
                       context,
-                      Colors.orange,
+                      Colors.blueAccent,
                       MdiIcons.cashClock,
                       'Payments',
                       () {
@@ -84,7 +86,15 @@ class MemberPage extends StatelessWidget {
                       Colors.deepPurple,
                       MdiIcons.bankOutline,
                       'Shares',
-                      () {},
+                      () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ShareTable(
+                                    members: [],
+                                  )),
+                        );
+                      },
                     ),
                   ],
                 ),
@@ -112,7 +122,7 @@ class MemberPage extends StatelessWidget {
                     ),
                     _buildCard(
                       context,
-                      Colors.deepPurple,
+                      Colors.tealAccent,
                       MdiIcons.notificationClearAll,
                       'Notifications',
                       () {},

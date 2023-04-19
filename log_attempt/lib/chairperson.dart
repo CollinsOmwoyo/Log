@@ -7,6 +7,7 @@ import 'shares.dart';
 import 'adminmembers.dart';
 import 'members.dart';
 import 'chamacalculations.dart';
+import 'loanrequests.dart';
 
 class AdminPage extends StatelessWidget {
   const AdminPage({Key? key}) : super(key: key);
@@ -54,7 +55,7 @@ class AdminPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const LoansActivity()),
+                              builder: (context) => const RequestScreen()),
                         );
                       },
                     ),
